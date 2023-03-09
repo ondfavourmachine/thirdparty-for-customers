@@ -1,0 +1,53 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+@font-face{
+    font-family: 'DM Sans Regular';
+    src: url('../assets/fonts/DMSans-Regular.ttf');
+}
+
+@font-face{
+    font-family: 'DM Sans Medium';
+    src: url('../assets/fonts/DMSans-Medium.ttf');
+}
+
+@font-face{
+    font-family: 'DM Sans Bold';
+    src: url('../assets/fonts/DMSans-Bold.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+.main_bg{
+    background-image: url(../images/module_backgrnd_image-min.png);
+    @apply bg-no-repeat bg-cover bg-center relative;
+}
+
+h3{
+    font-size: 2.8rem;
+    @apply leading-8 mt-9;
+  }
+
+  .content_container{
+    @apply w-full bg-white border-transparent rounded-sm h-auto px-8 pt-10 pb-5 mt-6;
+  }
+
+.submit_btn{
+    font-size: 1em;
+    @apply bg-[#4774BC] font-dmSansRegular text-white px-12 py-2 rounded-[3px] mt-8;
+  }
+
+  input::placeholder{
+    @apply text-[#c9c9c9] text-base;
+  }
+
